@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <h1>Website Feedback</h1>
+    <form action="thankyou.html" method="post">
+        <h2> Basic Information</h2>
+        <label for="full_name">Full name</label> <br>
+        <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required minlength="3">
+        <br>
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required maxlength="50">
+        <br>
+        <br>
+        <h2>Rating Sections</h2>
+        <p>How satisfied are you?</p>
+        <input type="radio" id="very_satisfied" name="satisfaction" value="very_satisfied" required>
+        <label for="very_satisfied">Very Satisfied</label><br>
+        <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+        <label for="satisfied">Satisfied</label><br>
+        <input type="radio" id="neutral" name="satisfaction" value="neutral">
+        <label for="neutral">Neutral</label><br>
+        <input type="radio" id="unsatisfied" name="satisfaction" value="unsatisfied">
+        <label for="unsatisfied">Unsatisfied</label><br>
+        <br>
+        <h2>Interest Sections</h2>
+        <p>What are your interests? (Select all that apply)</p>
+        <input type="checkbox" id="web_dev" name="interest" value="technology">
+        <label for="web_dev">Web Development</label><br>
+        <input type="checkbox" id="mobile_dev" name="interest" value="mobile-dev">
+        <label for="mobile_dev">Mobile Development</label><br>
+        <input type="checkbox" id="ai_ml" name="interest" value="ai-ml">
+        <label for="ai_ml">AI & Machine Learning</label><br>
+        <br>
+        <h2>Country Selection</h2>
+        <label for="country">Select Your Country:</label> <br>
+        <select id="country" name="country" required>
+            <option value="">Please choose an option</option>
+            <option value="nepal">Nepal</option>
+            <option value="italy">Italy</option>
+            <option value="greece">Greece</option>
+        </select>
+        <br>
+        <br>
+        <h2>Feedback Messages</h2>
+        <label for="feedback_msg">Write your feedback here</label> <br>
+        <textarea id="feedback_msg" name="feedback_msg" rows="5" cols="50"
+            placeholder="Write your comments here....."></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit Feedback"> <br>
+    </form>
+</body>
+
+</html>
