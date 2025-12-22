@@ -1,0 +1,90 @@
+/* A. External CSS */
+body {
+    background-color: aliceblue;
+    font-family: "Bitcount Prop Single", system-ui;
+    margin: 0;
+    padding-top: 60px;
+}
+
+h1,
+h2 {
+    color: darkgoldenrod;
+}
+
+/* B. Element Selector */
+p {
+    font-size: 16px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* CSS positioning */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: darkslategray;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+
+.main-container {
+    position: relative;
+    padding: 20px;
+}
+
+
+.important-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: chartreuse;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Class Selector */
+.content-wrapper {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+
+.blue-text {
+    color: blue;
+    font-weight: bold;
+}
+
+/* ID Selector */
+#main-title {
+    color: orangered;
+    text-align: center;
+}
+
+
+.box-example {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+.sticky-heading {
+    position: sticky;
+    top: 80px;
+    background-color: lightgray;
+    padding: 5px;
+}
+span{
+    color: purple;
+    font-style: italic;
+    text-decoration:underline;
+}
