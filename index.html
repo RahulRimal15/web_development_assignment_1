@@ -3,37 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <title>Welcome to My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- Internal CSS -->
+    <style>
+        .internal-test {
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to My First Webpage</h1>
-    <p>
-        Hello Everyone! My name is Rahul Rimal.This is my webpage built completely with HTML. I am excited to learn
-        further more about web development in the coming classes.
-    </p>
-    <p>
-        My goal is to <em>master</em> the full HTML, CSS, and JavaScript to build amazing websites.
-    </p>
-    <p>
-        So to master, I <strong>will practice</strong> a lot and build many projects.
-    </p>
-    <h2>My Hobbies</h2>
-    <ol>
-        <li>Playing Football</li>
-        <li>Traveling with family</li>
-        <li>Learning Musical Instruments</li>
-    </ol>
-    <h2>My Favorite Foods </h2>
-    <ul>
-        <li>Momo</li>
-        <li>Sandwich</li>
-        <li>Pizza</li>
-    </ul>
-    <p>
-        <a href="about.html">Learn more about me.</a> s
-    </p>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <div class="main-container">
+
+        <div class="important-box">Important</div>
+
+        <h1 id="main-title">Welcome to My First Webpage</h1>
+
+        <!-- Inline CSS -->
+        <p style="color: green;">My name is Rahul Rimal. I am a BSCS student.</p>
+
+        <div class="content-wrapper">
+            <p class="internal-test">
+                I am learning <span class="blue-text">Web Development</span>.
+            </p>
+        </div>
+
+        <div class="box-example">
+            CSS Box Model
+        </div>
+
+        <h2 class="sticky-heading">My Hobbies</h2>
+        <ol>
+            <li>Playing <strong>football</strong></li>
+            <li>Traveling with family</li>
+            <li>Learning musical instruments</li>
+        </ol>
+
+        <h2>Favorite Foods</h2>
+        <ul>
+            <li><u>Momo</u></li>
+            <li>Pizza</li>
+            <li><em>Sandwich</em></li>
+        </ul>
+
+        <div style="height: 800px;">
+            <p>Scroll down to see the sticky heading effect.</p>
+        </div>
+
+        <p><a href="about.html">Go to About Me</a></p>
+
+    </div>
+
 </body>
 
 </html>
