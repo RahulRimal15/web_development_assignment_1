@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-container mt-4">
+
+        <h1>Website Feedback</h1>
+
+        <form action="thankyou.html" method="post" class="p-3 border rounded bg-white">
+
+            <h2>Basic Information</h2>
+
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your full name" required minlength="3">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="you@example.com" required maxlength="50">
+            </div>
+
+            <h2>Rating Section</h2>
+            <div class="mb-3">
+                <input type="radio" name="rate" required> Very Satisfied<br>
+                <input type="radio" name="rate"> Satisfied<br>
+                <input type="radio" name="rate"> Neutral<br>
+                <input type="radio" name="rate"> Unsatisfied
+            </div>
+
+            <h2>Interests</h2>
+            <div class="mb-3">
+                <input type="checkbox"> Web Development<br>
+                <input type="checkbox"> Mobile Development<br>
+                <input type="checkbox"> AI & Machine Learning
+            </div>
+
+            <h2>Country</h2>
+            <div class="mb-3">
+                <select class="form-select" required>
+                    <option value="">Select</option>
+                    <option>Nepal</option>
+                    <option>Italy</option>
+                    <option>Greece</option>
+                </select>
+            </div>
+
+            <h2>Feedback</h2>
+            <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Write your feedback here"></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Submit Feedback">
+
+        </form>
+        <p class="mt-3">
+            <a href="index.html">Home</a>
+        </p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

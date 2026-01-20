@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="photos.html">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-container mt-4">
+
+        <h1 class="text-center mb-4">Photos</h1>
+
+        <section>
+            <h2>Flexbox Gallery</h2>
+            <div class="photos-flex">
+                <img src="Images/Image 1.jpg" alt="Flex Photo 1">
+                <img src="Images/Image 2.jpg" alt="Flex Photo 2">
+                <img src="Images/Image 3.jpg" alt="Flex Photo 3">
+                <img src="Images/Image 4.jpg" alt="Flex Photo 4">
+                <img src="Images/Image 5.jpg" alt="Flex Photo 5">
+                <img src="Images/Image 6.jpg" alt="Flex Photo 6">
+            </div>
+        </section>
+
+        <section>
+            <h2>Grid Gallery</h2>
+            <div class="photos-grid">
+                <img src="Images/Image 1.jpg" alt="Grid Photo 1">
+                <img src="Images/Image 2.jpg" alt="Grid Photo 2">
+                <img src="Images/Image 3.jpg" alt="Grid Photo 3">
+                <img src="Images/Image 4.jpg" alt="Grid Photo 4">
+                <img src="Images/Image 5.jpg" alt="Grid Photo 5">
+                <img src="Images/Image 6.jpg" alt="Grid Photo 6">
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
