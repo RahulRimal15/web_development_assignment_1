@@ -1,0 +1,7 @@
+#box{
+    width:200px;
+    height:200px;
+    background-color:darkgoldenrod;
+    margin-bottom:10px;
+    transition:background-color 0.5s;
+}
