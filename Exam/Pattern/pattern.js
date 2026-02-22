@@ -1,0 +1,9 @@
+function printTriangle() 
+{
+  for(let i=5;i>=1;i--) 
+  {
+    console.log("*".repeat(i));
+  }
+}
+printTriangle();
+
